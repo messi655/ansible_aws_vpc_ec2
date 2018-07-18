@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: False
+
+  roles:
+    - { role: create_ec2_vpc, mutiAZ: "yes", tags: [ "create" ] }
+    - { role: clean-ec2-vpc, mutiAZ: "yes", tags: [ "clean" ] }
+
+

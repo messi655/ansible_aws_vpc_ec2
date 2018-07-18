@@ -1,0 +1,31 @@
+---
+  region: us-west-1
+  project_name: ansible_testing
+  key_name: hadoop_testing
+  image_name: ami-070a1367 # CentOS 7
+  cleanup_cloud: true
+  dns_zone: example.com
+  ttl: 60
+  public_volume_size: 30
+  private_volume_size: 50
+  public_instance_type: t2.micro
+  private_instance_type: t2.micro
+  cidr_block: 172.30.0.0/16
+  cidr_pub_1: 172.30.16.0/20
+  cidr_pub_2: 172.30.32.0/20
+  cidr_pri_1: 172.30.128.0/24
+  cidr_pri_2: 172.30.254.0/24
+  az_1: us-west-1a
+  az_2: us-west-1b
+  number_masters: 3
+  number_workers: 3
+  number_masters_az_1: 1
+  number_masters_az_2: 2
+  number_workers_az_1: 2
+  number_workers_az_2: 1
+  path_hosts_group: /path/to/host/group
+
+
+  
+
+
